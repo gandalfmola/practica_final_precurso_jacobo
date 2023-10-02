@@ -153,12 +153,14 @@ main #projects .grid article:first-child {
     background-size: cover;
     background-position: center center;
     height: 40vh;
+    overflow: hidden;
 }
 
 main #projects .grid article:last-child {
     background-image: url(../images/coo-coo-clock.png);
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
 }
 
 main #projects .grid article:nth-child(2) {
@@ -184,7 +186,7 @@ main #projects .grid article h3 {
 
 main #projectos .grid article:hover h3 {
     left: 1.25rem;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 main section h2 {
