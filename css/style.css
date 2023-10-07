@@ -331,7 +331,7 @@ main section h2 {
 
 
 /*-------------MEDIAQUERIES--------------------*/
-
+/*---------------Tablet--------------------------*/
 @media(min-width: 48em) {
     header nav.container #btnMenu {
         /* de esta manera no ocupa esacio, con visibility:hidden desaparece pero sigue ocupando spacio */
@@ -382,7 +382,7 @@ main section h2 {
 
 }
 
-
+/*-----------------Desktop----------------------------*/
 @media(min-width: 87.5rem) {
     header .container {        
         padding: 0em;
@@ -390,5 +390,149 @@ main section h2 {
 
     footer .container {
         padding: 0em;
+    }
+}
+
+/*-----------------Mobile----------------------------*/
+
+@media(width <= 48em) {
+    .wraper {
+        background-color: tomato;
+    }
+
+    header ul.menu {
+        display: none;
+    }
+
+    main {        
+        background-color: lightblue;        
+    }
+    
+    main section h3 {        
+        text-align: center;
+    }
+    
+    main section div.fotos {
+        display: flex;        
+    }
+
+    main section div.fotos h4 {
+        font-size: 25px;        
+        text-align: center;
+    }
+
+    main section div.fotos h5 {
+        font-size: 20px;        
+        text-align: center;
+    }
+    
+    main section div.fotos div {
+        width: calc(100% - 15px  );
+    }   
+
+    
+ 
+/*--------------------Iconos--------------------------*/
+
+    main section.iconos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.iconos div.contenido div {
+        width: 100%;      
+        text-align: center;  
+        
+    }
+
+    main section.iconos div.contenido img {
+        text-align: center;
+    }
+    
+    main section.iconos img {
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        
+    }
+    
+    main section.iconos div.contenido div h4{
+        padding: 10px;    
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+/*------------------------Way----------------------------------*/
+
+    main section.way {
+        display: block;
+        position: static;
+    }
+    
+    main section.way h2 {
+        padding: 15px;
+    }
+    
+    main section.way nav {
+        background-color: red;
+        margin: 0 auto;
+        height: 10vh;
+        width: 100%;
+    }
+    
+    main section.way nav ul {
+        background-color: green;
+        display: flex;
+        text-align: center;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+    
+    main section.way nav ul li {
+        padding: 20px;
+        width: 17%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    main section.way nav ul li:hover {
+        background-color: yellow;
+        
+    }
+    
+    main section.way nav ul li a {
+        color: black;
+        font-size: 30px;
+        padding: 10px 0;
+        display: inline-block;
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+    }
+    
+    main section.way nav ul li a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    
+    
+    main section.way nav ul li #prueba {
+        border-color: orange;
+        border-width: 5px;
+        transform: rotate(45deg);
+    }
+    
+    main section.way div {
+        margin-top: 15px;
+    }
+    
+    main section.way div p {
+        font-size: 20px;
     }
 }
