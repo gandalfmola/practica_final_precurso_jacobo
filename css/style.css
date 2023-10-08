@@ -118,7 +118,7 @@ header nav.container .menu a.active {
 }
 
 /*-----------------MAIN----------------------*/
-/*-----------------MAIN----------------------*/
+/*-----------------fotos----------------------*/
 
 main {
     width: 80%;
@@ -128,6 +128,7 @@ main {
 main section h3 {
     font-size: 30px;
     padding: 35px 0 25px 0;
+    font-weight: 550;
 }
 
 main section div.fotos {
@@ -141,24 +142,44 @@ main section div.fotos div {
     width: calc(25% - 15px  );
 }
 
+main section div.fotos figure {
+    max-width: 150px;
+    transform: rotateZ(45deg);
+    overflow: hidden;
+    margin: 40px;
+    margin-left: 100px;
+}
+
+main section div.fotos figure img { 
+    transform: rotateZ(-45deg) scale(1.5);
+     
+} 
+
+main section div.fotos h4,h5 {
+    text-align: center;
+}
+
+/*---------------lema------------------*/
+
 main section div.lema {
     height: 100px;
     width: 100%;
-    background-color: rgb(238, 231, 231);
+    background-color:rgb(248, 248, 248);
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
+    padding: 150px;
 }
 
-main section div.lema h4 {
-    font-size: 30px;
+main section div.lema h4 {    
+    font-size: 30px;    
 }
+
+/*----------------iconos------------------*/
 
 main section.iconos div.contenido {
     height: 60vh;
-    display: flex;
-    
+    display: flex;    
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -173,26 +194,31 @@ main section.iconos img {
     width: 100px;
 }
 
+main section.iconos h3 {
+    font-size: 40px;
+    font-weight: 550;
+}
+
 main section.iconos div.contenido div h4{
     padding: 10px;
-
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+/*-----------------way--------------------*/
 
 main section.way h2 {
     padding: 15px;
 }
 
 main section.way nav {
-    background-color: red;
+    
     margin: 0 auto;
     height: 10vh;
     width: 100%;
 }
 
-main section.way nav ul {
-    background-color: green;
+main section.way nav ul {    
     display: flex;
     text-align: center;
     justify-content:space-around;
@@ -203,8 +229,7 @@ main section.way nav ul {
 
 main section.way nav ul li {
     padding: 20px;
-    width: 17%;
-    background-color: white;
+    width: 17%;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,8 +237,8 @@ main section.way nav ul li {
 }
 
 main section.way nav ul li:hover {
-    background-color: yellow;
     
+    border-bottom: solid black 5px;    
 }
 
 main section.way nav ul li a {
@@ -221,9 +246,10 @@ main section.way nav ul li a {
     font-size: 30px;
     padding: 10px 0;
     display: inline-block;
-    background-color: orange;
+    
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 main section.way nav ul li a:hover {
@@ -231,21 +257,16 @@ main section.way nav ul li a:hover {
     font-weight: bold;
 }
 
-
-
-main section.way nav ul li #prueba {
-    border-color: orange;
-    border-width: 5px;
-    transform: rotate(45deg);
-}
-
 main section.way div {
     margin-top: 15px;
 }
 
 main section.way div p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 19px;
 }
+
+
 
 
 
@@ -430,7 +451,24 @@ main section h2 {
         width: calc(100% - 15px  );
     }   
 
-    
+    main section div.fotos figure {
+        margin-left: 175px;
+       
+    }
+/*------------lema------------------------------------*/
+
+    main section div.lema {
+        display: flex;
+        flex-direction: column;        
+        background-color:rgb(248, 248, 248);        
+        text-align: center;
+        justify-content: center;
+    }
+
+    main section div.lema h4 {            
+        font-size: 20px;   
+        width: 400px;        
+    }    
  
 /*--------------------Iconos--------------------------*/
 
@@ -439,21 +477,19 @@ main section h2 {
         flex-direction: column;
     }
 
+
     main section.iconos div.contenido div {
         width: 100%;      
         text-align: center;  
         
     }
-
-    main section.iconos div.contenido img {
-        text-align: center;
-    }
     
     main section.iconos img {
-        height: 100px;
+        height: auto;
         width: 100px;
         margin: 0 auto;
-        
+        padding: 0;
+        display: block;
     }
     
     main section.iconos div.contenido div h4{
@@ -471,17 +507,17 @@ main section h2 {
     
     main section.way h2 {
         padding: 15px;
+        text-align: center;
     }
     
     main section.way nav {
-        background-color: red;
+    
         margin: 0 auto;
         height: 10vh;
         width: 100%;
     }
     
-    main section.way nav ul {
-        background-color: green;
+    main section.way nav ul {    
         display: flex;
         text-align: center;
         justify-content:space-around;
@@ -492,8 +528,7 @@ main section h2 {
     
     main section.way nav ul li {
         padding: 20px;
-        width: 17%;
-        background-color: white;
+        width: 17%;    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -501,8 +536,8 @@ main section h2 {
     }
     
     main section.way nav ul li:hover {
-        background-color: yellow;
         
+        border-bottom: solid black 5px;    
     }
     
     main section.way nav ul li a {
@@ -510,9 +545,10 @@ main section h2 {
         font-size: 30px;
         padding: 10px 0;
         display: inline-block;
-        background-color: orange;
+        
         width: 100%;
         height: 100%;
+        text-decoration: none;
     }
     
     main section.way nav ul li a:hover {
@@ -520,19 +556,12 @@ main section h2 {
         font-weight: bold;
     }
     
-    
-    
-    main section.way nav ul li #prueba {
-        border-color: orange;
-        border-width: 5px;
-        transform: rotate(45deg);
-    }
-    
     main section.way div {
         margin-top: 15px;
     }
     
     main section.way div p {
-        font-size: 20px;
+        font-size: 18px;
+        margin-left: 19px;
     }
 }
