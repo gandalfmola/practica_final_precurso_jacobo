@@ -211,8 +211,7 @@ main section.way h2 {
     padding: 15px;
 }
 
-main section.way nav {
-    
+main section.way nav {    
     margin: 0 auto;
     height: 10vh;
     width: 100%;
@@ -262,12 +261,17 @@ main section.way div {
 }
 
 main section.way div p {
-    font-size: 18px;
+    font-size: 25px;
     margin-left: 19px;
 }
 
+main section.way nav.oculto {
+    display: none;
+}
 
-
+main section.way h3.oculto {
+    display: none;
+}
 
 
 
@@ -558,6 +562,19 @@ main section h2 {
     
     main section.way div {
         margin-top: 15px;
+    }
+
+    main section.way nav {
+        display: none;
+    }
+
+    main section.way nav.oculto {
+        display: block;
+    }
+
+    main section.way h3.oculto {
+        display: block;
+        margin-top: -60px;
     }
     
     main section.way div p {
