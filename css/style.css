@@ -421,17 +421,14 @@ main section h2 {
 /*-----------------Mobile----------------------------*/
 
 @media(width <= 48em) {
-    .wraper {
-        background-color: tomato;
+    
+    main {
+        width: 100%;
     }
 
     header ul.menu {
         display: none;
-    }
-
-    main {        
-        background-color: lightblue;        
-    }
+    }    
     
     main section h3 {        
         text-align: center;
@@ -451,13 +448,14 @@ main section h2 {
         text-align: center;
     }
     
-    main section div.fotos div {
-        width: calc(100% - 15px  );
+    main section div.fotos div.giro {
+        width: calc(100% - 15px  );      
+        margin: 0 auto;        
     }   
 
     main section div.fotos figure {
-        margin-left: 175px;
-       
+        background-color: blue;
+        margin-left: 150px;
     }
 /*------------lema------------------------------------*/
 
@@ -481,16 +479,19 @@ main section h2 {
         flex-direction: column;
     }
 
+    main section.iconos div.contenido {
+        display: flex;
+    }
+
 
     main section.iconos div.contenido div {
         width: 100%;      
-        text-align: center;  
-        
+        text-align: center;          
     }
     
-    main section.iconos img {
-        height: auto;
-        width: 100px;
+    main section.iconos div.contenido div img {
+        height: 100px;
+        width: 200px;
         margin: 0 auto;
         padding: 0;
         display: block;
@@ -507,6 +508,7 @@ main section h2 {
     main section.way {
         display: block;
         position: static;
+        margin-top: 550px;
     }
     
     main section.way h2 {
@@ -574,7 +576,7 @@ main section h2 {
 
     main section.way h3.oculto {
         display: block;
-        margin-top: -60px;
+        margin-top: -45px;
     }
     
     main section.way div p {
